@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+      
+      <!--  styles    -->
+    <link rel="stylesheet" href="/styles/main.css">
+      
+      <!--  FONTS   -->
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+  </head>
+
+  <body>
+      <header>
+          <h1>What to watch</h1>
+      </header>
+      
+        <p class="headerText">Need to pass some time but not sure what to watch? simply fill in the form below and let WTW do the rest. </p>
+      <div class="wrapper">
+      <div class="search-container">
+          
+          <h2>Movie or series?</h2>
+          <select class="searchInput" id="type">
+              <option value="Movie">Movie</option>
+              <option value="series">Tv series</option>
+          </select>
+          
+          <h2>Genre</h2>
+          <select class="searchInput" id="genre">
+              <option value="28">Action</option>
+              <option value="12">Adventure</option>
+              <option value="16">Animation</option>
+              <option value="35">Comedy</option>
+          </select>
+          
+          <h2>Year</h2>
+          <select class="searchInput" id="year">
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2007</option>
+          </select>
+          <br>
+          <br>
+          
+          <button type="button" onclick="search()" class="searchButton">Search</button>
+          <button type="button" onclick="largeSearch()" class="largeSearchButton">Search</button>
+          
+      </div>
+      
+      <div class="movieContainer">
+           <div class="imgcontainer">
+      
+      <img id="largeMoviePoster" alt="Avatar" class="avatar">
+    </div>
+          
+          <div class="container">
+          <h2 id="largeMovieTitle"></h2>
+        
+        
+        <p id="largeMovieRating">Please fill out the form on the left and search to see your results here</p>
+        
+        
+        <h4 id="largePlotTitle">Plot</h4>
+        
+        <p id="largeMoviePlot"></p>
+      </div>
+      </div>
+      </div>
+      
+      <!--   Modal style  -->
+      
+      
+      <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="moviePoster" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <h2 id="movieTitle"></h2>
+        
+        
+        <p id="movieRating"></p>
+        
+        
+        <h4 id="plotTitle">Plot</h4>
+        
+        <p id="moviePlot"></p>
+    </div>
+      
+      
+
+   
+  </form>
+</div>
+
+    
+      <script src="js/main.js" type="application/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  </body>
+
+</html>

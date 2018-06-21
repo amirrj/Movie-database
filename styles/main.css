@@ -1,0 +1,278 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #252934;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+}
+
+header{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.search-container{
+    background-color: #fff;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    top: 5vh;
+}
+
+.searchInput{
+    width: 40%;
+    border-radius: 5px;
+}
+
+.searchButton{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.headerText{
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.movieContainer{
+    display: none;
+}
+
+.largeSearchButton{
+    
+    display: none;
+}
+
+
+
+
+
+
+/*------ MODAL ------*/
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #252934;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 10px
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 50%;
+
+}
+
+.container {
+    padding: 20px;
+    padding-top: 0;
+    word-wrap:break-word;
+    text-align: center;
+}
+
+#plotTitle{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+#moviePlot{
+    position: relative;
+    top: -10px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+
+
+/*------ tablet view ------*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    
+    header{
+        font-size: 1.5em
+    }
+    
+    .headerText{
+        font-size: 1.5em;
+    }
+    
+    .search-container{
+        margin-right: 50px;
+        margin-left: 50px;
+        font-size: 1.5em;
+    }
+    
+    button{
+        width: 70%;
+    }
+    
+    .searchInput{
+        font-size: 0.8em;
+    }
+    
+    .movieContainer{
+    display: none;
+}
+}
+
+
+/*----- large view ------*/
+
+@media (min-width:1025px){
+    
+    .wrapper{
+        display: flex;
+    }
+    
+    
+    .search-container{
+        width: 40%;
+        margin-right: 50px;
+        padding-top: 50px; 
+        height: 80%;
+    }
+    
+    .searchButton{
+        
+        display: none;
+    
+    }
+    
+    .largeSearchButton{
+        display: block;
+       margin-top: 30px; 
+        margin-left: 20px;
+    }
+    
+    .searchInput{
+        margin-bottom: 20px
+    }
+    
+    .searchInput:nth-child(6){
+        margin-bottom: 0px;
+    }
+    
+    .movieContainer{
+        background-color: #fff;
+        width: 60%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: 5vh;
+        display: flex;
+        margin-right: 20px;
+        border-radius: 15px;
+        
+    }
+    
+    .imgcontainer{
+        display: none;
+       width: 90vw;
+        margin-top: 70px;
+    }
+    
+    .container{
+        margin-top: 50px;
+        font-size: 1.2em;
+        width: 100vw;
+    }
+    
+    #largePlotTitle{
+        display: none;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+    }
+}
+
+
+
+
