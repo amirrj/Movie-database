@@ -24,7 +24,7 @@ function search(){
             var randomResult = Math.floor(Math.random()*resultsLength);
            
             
-            document.getElementById('moviePoster').setAttribute('src', 'http://image.tmdb.org/t/p/w185/' + response.results[randomResult].poster_path );
+            document.getElementById('moviePoster').setAttribute('src', 'http://image.tmdb.org/t/p/w342/' + response.results[randomResult].poster_path );
             
             if(type === "Movie"){
             document.getElementById('movieTitle').innerHTML = response.results[randomResult].title;
@@ -74,9 +74,9 @@ var modal = document.getElementById('id01');
 function largeSearch(){
     
     
-    
-    $('.imgcontainer').css('display', 'block');
-    $('#largePlotTitle').css('display', 'block');
+ 
+        $('.imgcontainer').css('display', 'block');
+        $('#largePlotTitle').css('display', 'block');
     
 
     var xhr = new XMLHttpRequest();
